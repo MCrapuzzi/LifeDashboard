@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="LifeDashboard.ApplicationService/LifeDashboard.ApplicationService.csproj" />
+  <Project Path="LifeDashboard.BusinessService/LifeDashboard.BusinessService.csproj" />
+  <Project Path="LifeDashboard.Infrastructure/LifeDashboard.Infrastructure.csproj" />
+  <Project Path="LifeDashboard/LifeDashboard.csproj" />
+</Solution>
