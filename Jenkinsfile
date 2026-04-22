@@ -1,7 +1,4 @@
 node {
-    checkout scm 
-    def customImage = docker.build("php_image:${env.BUILD_ID}")
-
     docker.withRegistry('http://host.docker.internal:5000', 'localhost-container-registry') {
 
         def customImage = docker.build("my-image:${env.BUILD_ID}")
