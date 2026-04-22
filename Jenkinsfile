@@ -4,7 +4,4 @@ node {
     customImage.inside{
         sh 'make test'
     }
-    // customImage.push()
-
-    // customImage.push('latest')
 }
