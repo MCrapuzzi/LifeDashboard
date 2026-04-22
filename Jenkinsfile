@@ -1,10 +1,10 @@
-pipeline {
-    agent any
-    stages {
-        stage('Example') {
-            steps {
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-            }
-        }
+node {
+    checkout scm
+    def customImage = docker.build("my-image:${env.BUILD_ID}")
+    customImage.inside{
+        sh 'make test'
     }
+    // customImage.push()
+
+    // customImage.push('latest')
 }
