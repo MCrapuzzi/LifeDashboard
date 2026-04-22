@@ -1,2 +1,2 @@
 FROM node
-RUN apk add -U subversion
+# RUN apk add -U subversion
