@@ -6,6 +6,7 @@ node {
     try{
     stage('Checkout') {
         checkout scm
+        cat ./dockerfile
     }
 
     stage('Build') {
