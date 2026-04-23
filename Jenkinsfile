@@ -36,8 +36,5 @@ node {
     }
 }
     }
-    catch(Exception e){
-        currentBuild.result = 'FAILURE'
-        throw e
-        }
+    catch(Exception e){currentBuild.result = 'FAILURE'}
 }
