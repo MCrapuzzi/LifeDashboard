@@ -47,7 +47,7 @@ node {
         )
     ]) {
         docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credentials') {
-            customImage.push("${image_build}")
+            image_build.push()
         }
     }
 }
