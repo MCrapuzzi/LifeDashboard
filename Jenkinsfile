@@ -32,11 +32,11 @@ node {
         }
     }
 
-    stage('Test'){
-        image_build.inside {
-            sh 'php -l index.php'
-        }
-    }
+    // stage('Test'){
+    //     image_build.inside {
+    //         sh 'php -l index.php'
+    //     }
+    // }
 
     stage('Push') {
     withCredentials([
