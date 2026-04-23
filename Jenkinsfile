@@ -1,5 +1,5 @@
 node {
-    docker.withRegistry('https://registry:5000', 'localhost-container-registry') {
+    docker.withRegistry('docker.io', 'docker-hub-credentials') {
 
         def customImage = docker.build("my-image:${env.BUILD_ID}")
 
